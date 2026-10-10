@@ -1,0 +1,417 @@
+
+div{font-family: "Bricolage Grotesque";
+}
+
+span{font-family: "Bricolage Grotesque";
+}
+
+
+
+
+header{
+    position:sticky;
+    top:0;
+    z-index: 1000;
+    display:flex;
+    justify-content: center;
+    background-color: lightcoral;
+    border-radius: 15px;
+    gap:50px;
+    @media (max-width:915px){
+        gap:20px;
+    }
+
+
+.top-part{
+    font-size: 35px;
+    font-family: "Bricolage Grotesque";
+    font-weight: bold;
+    @media (max-width:600px) {
+        font-size:22px;
+    }
+
+
+}
+
+a:link{
+    color:black;
+    text-decoration: none;
+}
+
+
+a:visited{
+    color:black;
+    text-decoration:none;
+
+}
+}
+
+body{
+    margin:0;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;; 
+
+main{
+    flex:1;
+}
+
+footer{
+    height:50px;
+    width:100%;
+    background-color: navy;
+    color:white;
+    font-family: "Bricolage Grotesque";
+    padding-top:15px;
+
+
+}
+
+.footer-smiles{
+    float:right;
+    margin-right: 5px;
+}
+
+
+
+
+/*--------------ABOUT-ME PAGE-------------*/ 
+
+.divider-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:7px;
+    margin-bottom: 20px;
+    gap:50px;
+    
+}
+
+.top-parent-container{
+    display:flex;
+}
+
+.middle-parent-container{
+    display:flex;
+    flex-direction: column;
+    background-color: lightcoral;
+    border-radius: 15px;
+    height:500px;
+    @media (max-width:760px){
+        height:750px;
+
+    }
+    
+    
+}
+
+#travel-title{
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: -50px;;
+    font-size: 28px;
+}
+
+
+.travel-pics-container{
+    flex:1;
+    display:flex;
+    place-items: center;
+    flex-direction: row;;
+    border-radius: 15px;
+    place-items: center;
+    justify-content: center;
+    margin:15px;
+    @media (max-width:760px){
+        flex-direction: column;
+
+    }
+
+
+}
+
+.travel-text{
+    text-align: center;
+    margin-top: 0px;
+    border:1px solid red;
+
+}
+
+
+
+.about-me{
+    flex:1;
+    padding:10px;
+    @media (max-width:760px){
+        margin:15px;
+
+    }
+
+}
+
+#about-me-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 15px;
+    margin:15px;
+    border:1px solid lightcoral;
+    width:50%;
+    @media (max-width:1000px){
+        flex-direction: column;
+
+    }
+
+}
+
+#logos-container{
+    flex:1;
+    display:flex;
+    flex-direction: row;;
+    border-radius: 15px;
+    background-color:lightcoral;
+    place-items: center;
+    justify-content: center;
+    margin:15px;
+    @media (max-width:760px){
+        flex-direction: column;
+
+    }
+
+}
+
+.bottom-parent-container{
+    margin-bottom:10px;
+    height:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    @media (max-width:760px){
+        flex-direction: column;
+
+    }
+
+}
+
+
+.progress-box{
+
+    height:100px;
+    width:45%;
+    background-color: lightcoral;
+    color:white;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    @media (max-width:760px){
+        font-size: 14px;
+        
+
+    }
+
+
+}
+
+#chels-logo{
+    width:150px;
+    height:150px;
+    padding:25px;
+    @media (max-width:760px){
+        width:100px;
+        height:100px;
+        padding:10px;
+
+    }
+
+}
+
+#book{
+    width:150px;
+    height:150px;
+    padding:25px;
+    @media (max-width:760px){
+        width:100px;
+        height:100px;
+        padding:10px;
+
+    }
+    filter: drop-shadow(5px 5px 2px black);
+}
+
+#guitar{
+    width:215px;
+    height:175px;
+    padding:20px;
+    object-fit: cover;
+    @media (max-width:760px){
+        width:98px;
+        height:80px;
+        padding:10px;
+
+    }
+    filter: drop-shadow(5px 5px 2px black);
+}
+
+#vienna{
+    width:350px;
+    height:275px;
+    padding:20px;
+    object-fit: cover;
+    @media (max-width:1000px){
+        width:250px;
+        height:150px;
+
+    }
+   
+    filter: drop-shadow(5px 5px 2px black);
+
+}
+
+#spain{
+
+    width:350px;
+    height:275px;
+    padding:20px;
+    object-fit: cover;
+    @media (max-width:1000px){
+        width:250px;
+        height:150px;
+
+    }
+    filter: drop-shadow(5px 5px 2px black);
+}
+
+#seoul{
+
+    width:350px;
+    height:275px;
+    padding:20px;
+    object-fit: cover;
+    @media (max-width:1000px){
+        width:250px;
+        height:150px;
+
+    }
+    filter: drop-shadow(5px 5px 2px black);
+}
+
+/* --------------- GALLERY PAGE ------------ */
+
+.gallery-box{
+    position:relative;
+    display:grid;
+    background-color: lightcoral;
+    border-radius: 15px;
+    margin:5px;
+    place-items: center;
+    overflow:hidden;
+    @media (max-width:760px){
+
+        height:200px;
+        width:200px;
+
+    }
+
+
+}
+
+.gallery-container{
+    margin-top: 15px;
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 250px 250px;
+    grid-gap:10px;
+    justify-content: center;
+    @media (max-width:760px){
+
+        grid-template-columns: 200px 200px;
+        grid-template-rows: auto;
+
+    }
+
+}
+
+.gallery-pic{
+
+    width:250px;
+    height:180px;
+    @media (max-width:760px){
+
+        width:180px;
+        height: 125px;
+    }
+    object-fit: cover;
+}
+
+.gallery-box:hover .gallery-pic {
+    filter: brightness(50%);
+}
+
+.content-text{
+    position:absolute;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+    font-family: "Bricolage Grotesque";
+    @media (max-width:760px){
+
+        font-size: 13px;
+    }
+
+}
+
+
+
+.gallery-box:hover .content-text{
+    opacity:1;
+    color:White;
+    font-family: "Bricolage Grotesque";
+    
+}
+
+
+/* ------- CONTACT PAGE --------- */
+
+.contact-container{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    background-color: lightcoral;
+    margin:auto;
+    margin-top: 15px;
+    border-radius: 15px;
+    justify-items: center;
+    align-items: center;
+    @media (max-width:760px){
+
+        height:500px;
+        width:450px;
+    }
+
+
+}
+
+#click-here-text{
+    margin:0;
+    font-size: 22px;
+    @media (max-width:760px){
+
+        font-size:18px;
+    }
+    
+}
+
+.contact-box{
+    flex:1;
+    text-align: center;
+    margin:10px;
+    align-items: center;
+
+
+}
+}
