@@ -396,14 +396,33 @@ footer{
 
 }
 
-#click-here-text{
-    margin:0;
-    font-size: 22px;
-    @media (max-width:760px){
+#contact-form{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    width:98%;
+    margin-left: 5px;
+}
 
-        font-size:18px;
-    }
+input {
+    border-radius: 5px;
+    height:25px;
+    border:none;
+    font-family: "Bricolage Grotesque";
     
+}
+
+option{
+    border:none;
+}
+
+textarea {
+    font-family: "Bricolage Grotesque";
+}
+
+#submit-button{
+    background-color: white;
+    border:none;
 }
 
 .contact-box{
@@ -415,3 +434,4 @@ footer{
 
 }
 }
+

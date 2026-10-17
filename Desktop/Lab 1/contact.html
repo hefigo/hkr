@@ -19,7 +19,21 @@
     
 
     <div class="contact-container">
-        <div class="contact-box"><p id="click-here-text"><a style="color:white; text-decoration: none;" href="mailto:helenfo10143@gmail.com?subject=Portfolio Website&body=Hi, my name is ... &cc=helena.figueroa-ortiz0005@stud.hkr.se"> Click <b>Here</b> if you would like to contact me! </a></p></div>
+        <form id="contact-form">
+           <input name="name" type="text" id="first-name" placeholder="Your first name here...">
+           <input name="name" type="text" id="last-name" placeholder="Your last name here...">
+           <input name="email" type="email" id="email" placeholder="Your email here...">
+           <label for="subject">Subject of your message?</label>
+           <select name="subject" id="subject">
+                <option value="intro">Introduce Yourself!</option>
+                <option value="website">Website Suggestion</option>
+                <option value="meeting">Lets schedule a meeting!</option>
+
+           </select>
+           <textarea name="message" id="message" placeholder="Write your text here..."></textarea>
+           <input type="submit" value="Submit :)" id="submit-button">
+
+        </form>
 
 
     </div>
@@ -42,6 +56,8 @@
 
 
 </body>
+
+<script src="script.js"></script>
 
 
 </html>
