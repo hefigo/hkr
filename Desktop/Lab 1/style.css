@@ -379,6 +379,7 @@ footer{
 
 .contact-container{
     display: flex;
+    flex-direction: column;
     height: 500px;
     width: 500px;
     background-color: lightcoral;
@@ -400,7 +401,7 @@ footer{
     display:flex;
     flex-direction: column;
     gap:15px;
-    width:98%;
+    width:95%;
     margin-left: 5px;
 }
 
@@ -423,6 +424,12 @@ textarea {
 #submit-button{
     background-color: white;
     border:none;
+    font-size: 20px;
+    height:35px;
+}
+
+#reset-button{
+    width:50px;
 }
 
 .contact-box{

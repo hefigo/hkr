@@ -19,10 +19,12 @@
     
 
     <div class="contact-container">
+        <p style="padding:10px; text-align: center;">If you'd like to contact me, please submit the following form:</p>
         <form id="contact-form">
-           <input name="name" type="text" id="first-name" placeholder="Your first name here...">
-           <input name="name" type="text" id="last-name" placeholder="Your last name here...">
-           <input name="email" type="email" id="email" placeholder="Your email here...">
+           <input name="name" type="text" id="first-name" placeholder="Your first name here..." required>
+           <input name="name" type="text" id="last-name" placeholder="Your last name here..." required>
+           <input name="email" type="email" id="email" placeholder="Your email here..." required>
+           <input name="phone" type="tel" maxlength="13" id="phone-number" placeholder="Your phone number here...">
            <label for="subject">Subject of your message?</label>
            <select name="subject" id="subject">
                 <option value="intro">Introduce Yourself!</option>
@@ -30,8 +32,9 @@
                 <option value="meeting">Lets schedule a meeting!</option>
 
            </select>
-           <textarea name="message" id="message" placeholder="Write your text here..."></textarea>
+           <textarea name="message" id="message" minlength="20" placeholder="Write your text here..." required></textarea>
            <input type="submit" value="Submit :)" id="submit-button">
+           <input id="reset-button" type="reset" value="Reset">
 
         </form>
 
