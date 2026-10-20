@@ -21,9 +21,12 @@
     <div class="contact-container">
         <p style="padding:10px; text-align: center;">If you'd like to contact me, please submit the following form:</p>
         <form id="contact-form">
-           <input name="name" type="text" id="first-name" placeholder="Your first name here..." required>
-           <input name="name" type="text" id="last-name" placeholder="Your last name here..." required>
-           <input name="email" type="email" id="email" placeholder="Your email here..." required>
+           <input name="firstname" type="text" id="first-name" placeholder="Your first name here..." novalidate>
+           <small id="first-name-error"></small>
+           <input name="lastname" type="text" id="last-name" placeholder="Your last name here..." novalidate>
+           <small id="last-name-error"></small>
+           <input name="email" type="email" id="email" placeholder="Your email here..." novalidate>
+           <small id="email-error"></small>
            <input name="phone" type="tel" maxlength="13" id="phone-number" placeholder="Your phone number here...">
            <label for="subject">Subject of your message?</label>
            <select name="subject" id="subject">
@@ -32,17 +35,19 @@
                 <option value="meeting">Lets schedule a meeting!</option>
 
            </select>
-           <textarea name="message" id="message" minlength="20" placeholder="Write your text here..." required></textarea>
-           <input type="submit" value="Submit :)" id="submit-button">
-           <input id="reset-button" type="reset" value="Reset">
-
+           <textarea name="message" id="message" minlength="20" placeholder="Write your text here..." novalidate></textarea>
+           <small id="message-error"></small>
+           <div class="button-container">
+            <input type="submit" value="Submit :)" id="submit-button">
+            <input id="reset-button" type="reset" value="Reset"></div>
+            
         </form>
 
 
     </div>
 
 
-    <footer> <i class="fa-brands fa-linkedin"></i> <a style="color:white; text-decoration: none;" id="linkedin" href="https://www.linkedin.com/in/helena-figueroa-ortiz-643a1a343" target="_blank" > By clicking here you can find my <b>LinkedIn</b></a>
+    <footer> <i class="fa-brands fa-linkedin"></i> <a style="color:white; text-decoration: none;" id="linkedin" href="" target="_blank" > By clicking here you can find my <b>LinkedIn</b></a>
 
         <i class="fa-solid fa-face-smile"></i>
 
@@ -57,10 +62,10 @@
 
 
 
-
+<script src="script.js"></script>
 </body>
 
-<script src="script.js"></script>
+
 
 
 </html>
