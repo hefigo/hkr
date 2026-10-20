@@ -380,7 +380,8 @@ footer{
 .contact-container{
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: auto;
+    min-height:500px;
     width: 500px;
     background-color: lightcoral;
     margin:auto;
@@ -393,6 +394,7 @@ footer{
         height:500px;
         width:450px;
     }
+    padding:2px;
 
 
 }
@@ -400,7 +402,7 @@ footer{
 #contact-form{
     display:flex;
     flex-direction: column;
-    gap:15px;
+    gap:7px;
     width:95%;
     margin-left: 5px;
 }
@@ -419,6 +421,12 @@ option{
 
 textarea {
     font-family: "Bricolage Grotesque";
+}
+
+small{
+    display:block;
+    color:red;
+    stroke: black;
 }
 
 #submit-button{
@@ -444,7 +452,7 @@ textarea {
 }
 }
 
-small{
-    color:red;
+#message-counter{
+    font-size: 8px;
 }
 
