@@ -412,7 +412,10 @@ input {
     height:25px;
     border:none;
     font-family: "Bricolage Grotesque";
-    
+}
+
+input:focus{
+    outline: none;
 }
 
 option{

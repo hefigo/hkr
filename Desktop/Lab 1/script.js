@@ -12,13 +12,28 @@ var FirstNameError = document.getElementById('first-name-error')
 var LastNameError = document.getElementById('last-name-error')
 var EmailError = document.getElementById('email-error')
 
-
+var personalMessage = document.getElementById('personalized-message')
 
 message.addEventListener("input", function(){
     const text = message.value;
     const count = text.length;
-    charcount.textContent = "Character Count: " + count
+    charcount.textContent = count + "/20 Characters "
+
+    if (count<20){
+        charcount.style.color = "red"
+    }
+    else{
+        charcount.style.color = "green";
+    }
 })
+
+function sayThankyou(){
+    personalMessage.textContent = "Thank you, " + firstname.value + ", for your message!";
+
+    setTimeout(function(){
+        personalMessage.textContent = ""
+    }, 3000)
+}
 
 form.addEventListener('submit', (e)=> {
     e.preventDefault();
@@ -26,6 +41,10 @@ form.addEventListener('submit', (e)=> {
     validateName();
     validateEmail();
     validateMessage();
+
+    sayThankyou();
+
+
     
 })
 
@@ -42,7 +61,8 @@ function clearError(element){
 function validateName(){
     if (firstname.value.trim() === "" || lastname.value.trim()=== "" 
     || !isNaN(firstname.value) || !isNaN(lastname.value))
-    { showError(FirstNameError, "Please enter your name!")}
+    { showError(FirstNameError, "Please enter your name!");
+    }
     else {
         clearError(FirstNameError);
     }
