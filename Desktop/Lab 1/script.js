@@ -38,13 +38,13 @@ function sayThankyou(){
 form.addEventListener('submit', (e)=> {
     e.preventDefault();
 
-    validateName();
-    validateEmail();
-    validateMessage();
+    const namevalid = validateName()
+    const emailvalid = validateEmail()
+    const messagevalid = validateMessage()
 
-    sayThankyou();
-
-
+    if (validateName() && validateEmail() && validateMessage()) {
+        sayThankyou();
+    }
     
 })
 
@@ -59,28 +59,63 @@ function clearError(element){
 
 
 function validateName(){
+    let valid = true
+
     if (firstname.value.trim() === "" || lastname.value.trim()=== "" 
     || !isNaN(firstname.value) || !isNaN(lastname.value))
-    { showError(FirstNameError, "Please enter your name!");
+    {
+        showError(FirstNameError, "Please enter your name!");
+        firstname.style.borderColor = "red"
+        valid = false
+
     }
     else {
         clearError(FirstNameError);
+        firstname.style.borderColor = ""
     }
+
+    if (lastname.value.trim() === "" || !isNaN(lastname.value.trim()))
+    {
+        showError(LastNameError, "Please enter your last name!");
+        lastname.style.borderColor = "red"
+        valid = false
+
+    }
+    else {
+        clearError(LastNameError);
+        lastname.style.borderColor = ""
+    }
+
+    return valid 
+
+
+
 }
 
 function validateEmail(){
     if (!email.value.includes("@")){
         showError(EmailError, "Please enter your email!");
+        email.style.borderColor = "red"
+        return false
     }
     else {
         clearError(EmailError);
+        email.style.borderColor = ""
+        return true
     }
+    
 
 }
 
 function validateMessage(){
     if (message.value.length < 20){
         alert ("Must type at least 20 characters!")
+        message.style.borderColor = 'red'
+        return false
+    }
+    else{
+        message.style.borderColor = ""
+        return true
     }
     
 }

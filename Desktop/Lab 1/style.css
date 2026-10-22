@@ -410,13 +410,10 @@ footer{
 input {
     border-radius: 5px;
     height:25px;
-    border:none;
+    border:1px solid black;
     font-family: "Bricolage Grotesque";
 }
 
-input:focus{
-    outline: none;
-}
 
 option{
     border:none;
