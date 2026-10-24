@@ -14,7 +14,7 @@ header{
     z-index: 1000;
     display:flex;
     justify-content: center;
-    background-color: lightcoral;
+    background-color: black;
     border-radius: 15px;
     gap:50px;
     @media (max-width:915px){
@@ -34,13 +34,13 @@ header{
 }
 
 a:link{
-    color:black;
+    color:white;
     text-decoration: none;
 }
 
 
 a:visited{
-    color:black;
+    color:white;
     text-decoration:none;
 
 }
@@ -59,7 +59,7 @@ main{
 footer{
     height:50px;
     width:100%;
-    background-color: navy;
+    background-color: black;
     color:white;
     font-family: "Bricolage Grotesque";
     padding-top:15px;
@@ -94,7 +94,7 @@ footer{
 .middle-parent-container{
     display:flex;
     flex-direction: column;
-    background-color: lightcoral;
+    background-color: black;
     border-radius: 15px;
     height:500px;
     @media (max-width:760px){
@@ -110,6 +110,7 @@ footer{
     margin-top: 35px;
     margin-bottom: -50px;;
     font-size: 28px;
+    color:white;
 }
 
 
@@ -155,7 +156,7 @@ footer{
     justify-content: center;
     border-radius: 15px;
     margin:15px;
-    border:1px solid lightcoral;
+    border:1px solid black;
     width:50%;
     @media (max-width:1000px){
         flex-direction: column;
@@ -169,7 +170,7 @@ footer{
     display:flex;
     flex-direction: row;;
     border-radius: 15px;
-    background-color:lightcoral;
+    background-color:black;
     place-items: center;
     justify-content: center;
     margin:15px;
@@ -200,7 +201,7 @@ footer{
 
     height:100px;
     width:45%;
-    background-color: lightcoral;
+    background-color: black;
     color:white;
     border-radius: 11px;
     display: flex;
@@ -227,6 +228,8 @@ footer{
         padding:10px;
 
     }
+
+    filter:invert()
 
 }
 
@@ -305,7 +308,7 @@ footer{
 .gallery-box{
     position:relative;
     display:grid;
-    background-color: lightcoral;
+    background-color: black;
     border-radius: 15px;
     margin:5px;
     place-items: center;
@@ -383,7 +386,8 @@ footer{
     height: auto;
     min-height:500px;
     width: 500px;
-    background-color: lightcoral;
+    background-color: black;
+    color:white;
     margin:auto;
     margin-top: 15px;
     border-radius: 15px;
@@ -453,6 +457,6 @@ small{
 }
 
 #message-counter{
-    font-size: 8px;
+    font-size: 11px;
 }
 

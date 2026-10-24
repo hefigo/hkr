@@ -43,13 +43,14 @@ form.addEventListener('submit', (e)=> {
     const messagevalid = validateMessage()
 
     if (validateName() && validateEmail() && validateMessage()) {
-        sayThankyou();
+        sayThankyou()
+        form.reset() // i think this is easier than making a new function
     }
     
 })
 
 function showError(element, message){
-    element.textContent = message;
+    element.textContent = message
 
 }
 function clearError(element){
