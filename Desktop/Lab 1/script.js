@@ -62,8 +62,8 @@ function clearError(element){
 function validateName(){
     let valid = true
 
-    if (firstname.value.trim() === "" || lastname.value.trim()=== "" 
-    || !isNaN(firstname.value) || !isNaN(lastname.value))
+    if (firstname.value.trim() === "" 
+    || !isNaN(firstname.value))
     {
         showError(FirstNameError, "Please enter your name!");
         firstname.style.borderColor = "red"

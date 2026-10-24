@@ -15,7 +15,6 @@ header{
     display:flex;
     justify-content: center;
     background-color: black;
-    border-radius: 15px;
     gap:50px;
     @media (max-width:915px){
         gap:20px;
@@ -418,6 +417,11 @@ input {
     font-family: "Bricolage Grotesque";
 }
 
+input:focus{
+    outline-color: rgb(0, 165, 254);
+}
+
+
 
 option{
     border:none;
@@ -427,9 +431,17 @@ textarea {
     font-family: "Bricolage Grotesque";
 }
 
+textarea:focus{
+    outline-color: rgb(0, 165, 254);
+}
+
+select:focus{
+    outline-color: rgb(0, 165, 254);
+}
+
 small{
     display:block;
-    color:red;
+    color: #DC3545;
     stroke: black;
 }
 
