@@ -42,7 +42,7 @@ form.addEventListener('submit', (e)=> {
     const emailvalid = validateEmail()
     const messagevalid = validateMessage()
 
-    if (validateName() && validateEmail() && validateMessage()) {
+    if (namevalid && emailvalid && messagevalid) {
         sayThankyou()
         form.reset() // i think this is easier than making a new function
     }
@@ -107,6 +107,8 @@ function validateEmail(){
     
 
 }
+
+
 
 function validateMessage(){
     if (message.value.length < 20){
