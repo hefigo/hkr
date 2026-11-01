@@ -11,6 +11,7 @@ const form = document.getElementById('contact-form')
 var FirstNameError = document.getElementById('first-name-error')
 var LastNameError = document.getElementById('last-name-error')
 var EmailError = document.getElementById('email-error')
+var PhoneError = document.getElementById('phone-error')
 
 var personalMessage = document.getElementById('personalized-message')
 
@@ -41,8 +42,9 @@ form.addEventListener('submit', (e)=> {
     const namevalid = validateName()
     const emailvalid = validateEmail()
     const messagevalid = validateMessage()
+    const phonevalid = validatePhone()
 
-    if (namevalid && emailvalid && messagevalid) {
+    if (namevalid && emailvalid && messagevalid && phonevalid) {
         sayThankyou()
         form.reset() // i think this is easier than making a new function
     }
@@ -89,9 +91,24 @@ function validateName(){
 
     return valid 
 
-
-
 }
+
+firstname.addEventListener("input", function(){
+    if (firstname.value.trim() !== ""){
+        firstname.style.borderColor = "green"
+        clearError(FirstNameError) 
+    }
+    
+})
+
+lastname.addEventListener("input", function(){
+    if (lastname.value.trim() !== ""){
+        lastname.style.borderColor = "green"
+        clearError(LastNameError)
+    }
+})
+
+
 
 function validateEmail(){
     if (!email.value.includes("@")){
@@ -104,11 +121,36 @@ function validateEmail(){
         email.style.borderColor = ""
         return true
     }
-    
 
 }
 
+email.addEventListener("input", function(){
+    if (email.value.includes('@')){
+        email.style.borderColor = "green"
+        clearError(EmailError)
+    }
 
+})
+
+function validatePhone(){
+    if (phone.value.trim() !== "" && isNaN(phone.value)){
+        showError(PhoneError, 'Please enter numbers only!')
+        phone.style.borderColor = "red";
+        return false
+    }
+    else {
+        clearError(PhoneError)
+        phone.style.borderColor = ""
+        return true
+    }
+}
+
+phone.addEventListener("input", function(){
+    if (phone.value.trim() !== "" && !isNaN(phone.value)){
+        phone.style.borderColor = "green"
+        clearError(PhoneError)
+    }
+})
 
 function validateMessage(){
     if (message.value.length < 20){
