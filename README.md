@@ -7,7 +7,7 @@ While I have truly enjoyed this course, this Lab and learning JavaScript has pro
 
 As I began by following the Grade 3 criterion which involved editing my contact.html page. As I had previously only set a button that when clicking would use mailto: [my email], and preset text like “I am emailing to…”. However, because this required a real contact form, the first thing I did was create the inputs. HTML and CSS editing was by far the easiest and most manageable in this Lab. It felt more straightforward than learning Javascript syntax. Thanks to W3schools.com and YouTube tutorials, I was able to fill in the gaps.
 
-![First screenshot after implementing git. VS Code window, and browser with the contact page is visible. The margins of the inputs do not look well placed](Screenshot 2026-10-17 at 12.43.12.png)
+<img width="1470" height="956" alt="Image" src="https://github.com/user-attachments/assets/efecf143-f804-485e-98ff-0eba6185e33f" />
 
 Additionally, implementing github was no problem thanks to the video provided on Canvas.
 
