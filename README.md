@@ -12,9 +12,13 @@ As I began by following the Grade 3 criterion which involved editing my contact.
 Additionally, implementing github was no problem thanks to the video provided on Canvas.
 
 I did experience some issues, as usual, with certain formatting of containers. Where the fix involved applying multiple display:flex;, and flex-direction: column;. 
+<img width="1470" height="956" alt="Image" src="https://github.com/user-attachments/assets/375b4517-d374-4301-a669-ab275e234c94" />
+<img width="1470" height="956" alt="Image" src="https://github.com/user-attachments/assets/544e71be-e905-4d96-bb42-78e194160b6b" />
 
 Moreover, another issue I encountered was when adding <small> to add the error texts. Whenever they appeared on form submission, they would overflow and push all inputs outside the container. In this case, I did not find any other solutions, only to make the height of the container larger to accommodate it the size. . Unfortunately I did not take any screenshots.
 
 Another occurrence was that I had not realized some of my initial HTML work would overwrite any Javascript function. For example, in the inputs I added ‘required’, as well as ‘minlength’ for the textarea. Then I would create the Javascript functions for validations. For a long time, the validation functions would not work. There would be a browser pop-up below the input requiring a value, but it was not my JS alert. I believed my JS code had to be utterly incorrect, however, this was solved because of some ChatGPT debugging. Afterwards, I also had to change the input type for the “email” to “text”, because then that way my own validation through JS is the one doing the work, and not the automatic built-in HTML email verifier.
+
+
 
 
