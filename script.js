@@ -38,7 +38,6 @@ function sayThankyou(){
 
 form.addEventListener('submit', (e)=> {
     e.preventDefault();
-
     const namevalid = validateName()
     const emailvalid = validateEmail()
     const messagevalid = validateMessage()
@@ -62,14 +61,17 @@ function clearError(element){
 
 
 function validateName(){
+    // saying the form IS valid, if not, then the others ensue
     let valid = true
 
+    // value.trim useful to remove empty spaces before & after values
     if (firstname.value.trim() === "" 
     || !isNaN(firstname.value))
     {
         showError(FirstNameError, "Please enter your name!");
         firstname.style.borderColor = "red"
         valid = false
+        // 
 
     }
     else {
@@ -90,6 +92,7 @@ function validateName(){
     }
 
     return valid 
+    // should return the final result. if it's right or not. 
 
 }
 
