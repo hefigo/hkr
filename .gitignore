@@ -1,0 +1,27 @@
+
+# Ignore Mac system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Ignore personal Mac folders
+.Trash/
+Documents/
+Downloads/
+Desktop/
+Applications/
+Library/
+Movies/
+Music/
+Pictures/
+
+# Ignore personal configuration files
+.gitconfig
+.zsh_history
+.zsh_sessions/
+.zprofile
+.CFUserTextEncoding
+
+# Ignore cache files
+.cache/
