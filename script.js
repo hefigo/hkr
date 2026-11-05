@@ -20,7 +20,7 @@ message.addEventListener("input", function(){
     const count = text.length;
     charcount.textContent = count + "/20 Characters "
 
-    if (count<20){
+    if (count<15 || count>20){
         charcount.style.color = "red"
     }
     else{
